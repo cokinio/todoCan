@@ -58,8 +58,13 @@ nav {
                 color: rgb( 13, 13, 13);
                 text-decoration: none;
                 font-size: 2.2rem;
+                transition: underline 0s;
             }
 
+            nav ul li a:hover{
+                text-decoration: underline;
+                font-size: 2.3rem;
+            }
 main {
     grid-area: main;
     background-color: rgb(242, 205, 94);
@@ -226,7 +231,12 @@ form{
 			border-top-right-radius: 5px;
             width:100%;
             height: 50vh;
+            transition: border 0.5s;
 		}
+
+        #productos .galeria figure img:hover{
+            border: 5px solid #555;
+        }
 
 		#productos .galeria figure figcaption{
 			font-size: 2.5rem;
