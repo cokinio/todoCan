@@ -7,37 +7,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactenos</title>
     <link rel="shortcut icon" href="../img/logo.png">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <!-- Mi estilo -->
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
 
-    <header>
-        <a href="../index.html">
-            <img class="nav_image--size" src="../img/header.png" alt="logo de Todo Can - Lo mejor para tu perro">
-        </a>
-    </header>     
-    <nav>
-        <ul>
-            <li>
-                <a href="../index.html">Homepage</a>
-            </li>
-            <li>
-                <a href="productos.html">Productos</a>
-            </li>
-            <li>
-                <a href="peluqueria.html">Peluqueria canina</a>
-            </li>
-            <li>
-                <a href="quienes-somos.html">¿Quienes somos?</a>
-            </li>
-            <li>
-                <a href="contactenos.html">Contactenos</a>
-            </li>
-        </ul>
+    <div class="bg-gris py-1 px-4 text-center bg-amarillo" id="barraSuperior">
+        <img src="../img/phone.svg" alt="nuestros telefono">
+        Lamanos al 02914500000
+        <img src="../img/home.svg" alt="direccion">
+        Estamos en Alem 104
+    </div>
+    
+    
+    <!-- Empieza nav -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-gris py-1" id="botonera">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"> 
+                <img src="../img/logo.png" alt="Todo Can"> 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="productos.html">TIENDA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="peluqueria.html">PELUQUERIA</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="quienes-somos.html">¿QUIENES SOMOS?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactenos.html">CONTACTENOS</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
     
     <main>
+        <div class="breadcrumb">
+            <div style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="../index.html">INICIO</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">PELUQUERIA</li>
+                </ol>
+            </div>
+        </div>
+
         <h1>Pongase en contacto con nosotros</h1>
         <div class="flexStyle">
             <section class="contactenos_form--grow">
@@ -103,7 +126,7 @@
         </div>
     </main>
 
-    <footer>
+    <footer class="bg-amarillo">
         <a href="http://www.facebook.com" target="_blank"><img src="../img/facebook.png"
             alt="link a pagina de facebook">Facebook</a>
         <a href="http://www.instagram.com" target="_blank"> <img src="../img/instagram.png"
@@ -114,6 +137,7 @@
             alt="link a pagina de telegram">Telegram</a>
     </footer>
 
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 
 </html>
