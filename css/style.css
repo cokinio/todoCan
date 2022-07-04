@@ -20,19 +20,6 @@ body{
     background-color: rgba(247, 247, 247,0.9);
 }
 
-.grid{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    row-gap: 0px;
-    grid-template-areas: 
-    "header"
-    "nav"
-    "main"
-    "footer"
-    ;
-}
-
 #barraSuperior {
     font-size: 1.6rem;
 }
@@ -59,7 +46,6 @@ body{
     background-color: rgb( 245, 214, 0);
 }
 
-/* Navigation bootstrap */
 #botonera img{
 	height: 10vh;
 }
@@ -85,43 +71,29 @@ body{
         font-size: 2.1rem;
     } 
 
-/* Ends navigation bootstrap */
-
-/* Homemade Nav */
-nav {
-    grid-area: nav;
-    width:auto; 
+nav ul li{
+    list-style: none;
+    font-family: 'Roboto Condensed', sans-serif;;
+    font-size: 2rem;
+    padding: 4px;
+    text-align: center;
 }
-    nav ul{
-    display: flex;
-    justify-content: center; 
-    flex-direction: column;
+    nav ul li a{
+        color: rgb( 13, 13, 13);
+        text-decoration: none;
+        font-size: 2.2rem;
+        transition: underline 0s;
     }
-        nav ul li{
-            list-style: none;
-            font-family: 'Roboto Condensed', sans-serif;;
-            font-size: 2rem;
-            padding: 4px;
-            text-align: center;
-        }
-            nav ul li a{
-                color: rgb( 13, 13, 13);
-                text-decoration: none;
-                font-size: 2.2rem;
-                transition: underline 0s;
-            }
 
-            nav ul li a:hover{
-                text-decoration: underline;
-                font-size: 2.3rem;
-            }
-/* Ends homemade Nav */
+    nav ul li a:hover{
+        text-decoration: underline;
+        font-size: 2.3rem;
+    }
 
 .padding-principal{
     padding-left: 10%;
     padding-right: 10%;
 }
-
 
 .bloque{
     margin:10%; 
@@ -140,9 +112,9 @@ footer{
     display: flex;
     justify-content: space-evenly;
 }
-    footer a{
-        font-family: 'Roboto Condensed', sans-serif;;
-        font-size: 2rem;
+    footer a {
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 1rem;
         text-decoration: none;
         padding: 3px;
     }
@@ -161,7 +133,7 @@ h3{
 h1,h2,h3{
     font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
-    text-transform: capitalize; 
+    /* text-transform: capitalize;  */
 }
 
 section p{
@@ -187,7 +159,6 @@ table{
     display: flex;
     justify-content: center;
     border: none;
-    /*border-style: dashed; */
 }
     table tr {
         color:rgb( 13, 13, 13);
@@ -346,18 +317,15 @@ form{
         grid-area: corteybaño;
         justify-self: stretch;
         align-self: stretch;
-        background:linear-gradient(to right,rgb( 245, 214, 0), rgb(247, 247, 247))  ; 
-        margin-top: 10vh;
+        background:linear-gradient(to right,rgb( 245, 214, 0), rgb(247, 247, 247)); 
     }
 
     .corteybañopic{
         grid-area: corteybañopic;
-        width:70%;
+        width:100%;
         height: auto;
-        justify-self: stretch;
-        align-self: stretch;
-        margin-top: 10vh;
-
+        justify-self: center;
+        align-self: center;
     } 
 
     .baño{
@@ -365,52 +333,45 @@ form{
         justify-self: stretch;
         align-self:stretch;
         background:linear-gradient(to left,rgb( 245, 214, 0), rgb(247, 247, 247))  ; 
-        margin-top: 10vh;
     }
 
     .bañopic{
         grid-area: bañopic;
-        width:70%;
+        width:100%;
         height: auto;
-        justify-self: self-end;
-        align-self: stretch;
-        margin-top: 10vh;
-
+        justify-self: center;
+        align-self: center;
     }
 
     .corte{
         grid-area: corte;
-        justify-self: stretch;
-        align-self: stretch;  
+        justify-self: center;
+        align-self: center;  
         background:linear-gradient(to right,rgb( 245, 214, 0), rgb(247, 247, 247))  ; 
-        margin-top: 10vh;
-    }
+        }
 
     .cortepic{
         grid-area: cortepic;
-        width:70%;
+        width:100%;
         height: auto;
-        justify-self: stretch;
-        align-self: stretch;
-        margin-top: 10vh;
+        justify-self: center;
+        align-self: center;
     }
 
     .uñas{
         grid-area: uñas;
         border-color: black;
-        justify-self: stretch;
-        align-self: stretch;
+        justify-self: center;
+        align-self: center;
         background:linear-gradient(to left,rgb( 245, 214, 0), rgb(247, 247, 247))  ; 
-        margin-top: 10vh;
     }
 
     .uñaspic{
         grid-area: uñaspic;
-        width:70%;
+        width:100%;
         height: auto;
-        justify-self: self-end;
-        align-self: stretch;
-        margin-top: 10vh;
+        justify-self: center;
+        align-self: center;
     }
 
 }
@@ -426,8 +387,10 @@ form{
         width: 46%;
         } 
 
+    footer a {
+        font-size: 2rem;
+    }
 }
-
 
 /* Resolucion 768 */
 @media screen and (min-width:768px){
@@ -450,22 +413,76 @@ form{
         width: 23%;
         } 
 
-/* peluqueria
- */
-.gridpelu{
-    padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(4,1fr);  
-    /* grid-column-gap: 10px;
-    grid-row-gap: 10px; */
-    justify-items:center;
-    align-items: center;
-    grid-template-areas: 
-    "corteybaño corteybaño corteybañopic"
-    "bañopic baño baño"
-    "corte corte cortepic"
-    "uñaspic uñas uñas";
-}
+    /* peluqueria
+    */
+    .gridpelu{
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4,1fr);  
+        /* grid-column-gap: 10px;
+        grid-row-gap: 10px; */
+        justify-items:center;
+        align-items: center;
+        grid-template-areas: 
+        "corteybaño corteybaño corteybañopic"
+        "bañopic baño baño"
+        "corte corte cortepic"
+        "uñaspic uñas uñas";
+    }
+
+    .corteybaño {
+        margin-top: 10vh;
+        justify-self: stretch;
+        align-self: stretch;
+    }
+
+    .corteybañopic{
+        width:70%;
+        margin-top: 10vh;
+        justify-self: stretch;
+        align-self:stretch;
+
+    } 
+
+    .baño{
+        margin-top: 10vh;
+        justify-self: stretch;
+        align-self: stretch;
+    }
+
+    .bañopic{
+        width:70%;
+        align-self: stretch;
+        justify-self: self-end;
+        margin-top: 10vh;
+
+    }
+
+    .corte{
+        margin-top: 10vh;
+        justify-self: stretch;
+        align-self: stretch;
+    }
+
+    .cortepic{
+        width:70%;
+        margin-top: 10vh;
+        justify-self: stretch;
+        align-self: stretch;
+    }
+
+    .uñas{
+        margin-top: 10vh;
+        justify-self: stretch;
+        align-self: stretch;
+    }
+
+    .uñaspic{
+        width:70%;
+        align-self: stretch;
+        justify-self: self-end;
+        margin-top: 10vh;
+    }
 
 }
