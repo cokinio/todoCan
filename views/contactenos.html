@@ -61,62 +61,93 @@
             </div>
         </div>
 
-        <h1>Pongase en contacto con nosotros</h1>
-        <div class="flexStyle">
-            <section class="contactenos_form--grow">
-                <h2>Deje su mensaje</h2>
-                <form action="envio.php">
-                    <fieldset>
-                        <legend>Datos de contacto</legend>
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" id="nombre" placeholder="Juan Perez">
-                        <label for="email">E-mail:</label>
-                        <input type="email" id="email" placeholder="juanperez@gmail.com">
+        <section>
+            <div>
+                <h1>Pongase en contacto con nosotros</h1>
+                <p>Nos gustaria escuchar su opinión</p>
+            </div>
+                <form class="padding-principal bg-white">
+                    <div class="row">
+                        <div class="col">
+                        <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="nombre" placeholder="Juan" aria-label="First name">
+                        </div>
+                        <div class="col">
+                            <label for="apellido" class="form-label">Apellido</label>
+                            <input type="text" class="form-control" id="Apellido" placeholder="Perez" aria-label="Last name">
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Dirección de email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1">
+                    </div>
+                    <fieldset class="row mb-3">
+                        <legend class="col-form-label col-sm-2 pt-0">Sexo</legend>
+                        <div class="col-sm-10">
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                                <label class="form-check-label" for="gridRadios1">
+                                Hombre
+                            </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                                <label class="form-check-label" for="gridRadios2">
+                                    Mujer
+                                </label>
+                            </div>
+                        </div>
                     </fieldset>
-                    <fieldset>
-                        <legend>Sexo</legend>
-                        <label for="hombre">Hombre</label>
-                        <input type="radio" id="hombre" value="hombre" name="sexo">
-                        <label for="mujer">Mujer</label>
-                        <input type="radio" id="mujer" value="mujer" name="sexo">
-                    </fieldset>
-                    <fieldset>
-                        <legend>País</legend>
-                        <label for="pais">Seleccione su país:</label>
-                        <select name="pais" id="pais">
-                            <option value="argentina">Argentina</option>
-                            <option value="brasil">Brasil</option>
-                            <option value="chile">Chile</option>
-                            <option value="uruguay">Uruguay</option>
-                            <option value="paraguay">Paraguay</option>
-                            <option value="bolivia">Bolivia</option>
-                        </select>
-                    </fieldset>
-                    <fieldset>
-                        <legend>¿Como se enteró de nosotros?</legend>
-                        <label for="internet">Internet</label>
-                        <input type="checkbox" id="internet" value="internet">
-                        <label for="television">Televisión</label>
-                        <input type="checkbox" id="television" value="television">
-                        <label for="radio">Radio</label>
-                        <input type="checkbox" id="radio" value="radio">
-                        <label for="recomendacion">Recomendación</label>
-                        <input type="checkbox" id="recomendacion" value="recomendacion">
-
-                    </fieldset>
-                    <label for="mensaje">Deje su mensaje:</label>
-                    <br>
-                    <textarea name="mensaje" id="mensaje" placeholder="Ingrese aqui su texto" cols="30"
-                        rows="10"></textarea>
-                    <br>
-                    <input type="reset" value="Cancelar">
-                    <input type="submit" value="Enviar">
+                    <div class="row">
+                        <div class="col-sm-2">
+                            <label for="pais" class="form-label">Pais</label>
+                        </div>
+                        <div class="col-sm-10">
+                            <select id="pais" class="form-select">
+                                <option selected value="argentina">Argentina</option>
+                                <option value="brasil">Brasil</option>
+                                <option value="chile">Chile</option>
+                                <option value="uruguay">Uruguay</option>
+                                <option value="paraguay">Paraguay</option>
+                                <option value="bolivia">Bolivia</option>
+                            </select>
+                        </div>
+                    </div>
+                    <label for="selector" class="form-label mt-3">¿Como nos conoció?</label>
+                    <div class="row" id="selector">
+                        <div class="mb-3 form-check col-md-3">
+                            <input type="checkbox" class="form-check-input" id="internet">
+                            <label class="form-check-label" for="internet">Internet</label>
+                        </div>
+                        <div class="mb-3 form-check col-md-3">
+                            <input type="checkbox" class="form-check-input" id="television">
+                            <label class="form-check-label" for="television">Televisión</label>
+                        </div>
+                        <div class="mb-3 form-check col-md-3">
+                            <input type="checkbox" class="form-check-input" id="radio">
+                            <label class="form-check-label" for="radio">Radio</label>
+                        </div>
+                        <div class="mb-3 form-check col-md-3">
+                            <input type="checkbox" class="form-check-input" id="recomendacion">
+                            <label class="form-check-label" for="recomendacion">Recomendación</label>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="mensaje">Deje su mensaje:</label>
+                        <textarea name="mensaje" class="form-control" rows="5" id="mensaje" placeholder="Ingrese aqui su texto">
+                        </textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="reset" class="btn btn-lg bg-amarillo">Cancelar</button>
+                        <button type="submit" class="btn btn-lg bg-amarillo">Enviar</button>
+                    </div>
                 </form>
             </section>
 
             <section class="contactenos_map--grow">
-                <!-- map -->
-                <h2>¿Donde estamos?</h2>
+                <div class="bg-amarillo">
+                    <h2 class="mb-3">¿Donde estamos?</h2>
+                </div>
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3113.1797127524987!2d-62.26334778466663!3d-38.71368277959936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95eda3531f90e03f%3A0x1443b6af6811aba0!2sAv.%20Leandro%20Niceforo%20Alem%20100%2C%20Bah%C3%ADa%20Blanca%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1653860117440!5m2!1ses!2sar"
                     width="100%" height="85%" style="border:0;" allowfullscreen="" loading="lazy"
