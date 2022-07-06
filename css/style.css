@@ -237,6 +237,21 @@ form{
     overflow: hidden;
 }
 
+@keyframes animateCarrousel{
+	0%{transition: transform}
+	33%{transition: transform}
+    66%{transition: transform}
+}
+
+.carousel-item {
+    animation-name: animateCarrousel;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-delay: 0s;
+	animation-duration: 3s;
+}
+
+
 /* contactenos */
 .contactenos_map--grow{
     width: 100%;
