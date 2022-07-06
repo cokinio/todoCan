@@ -26,6 +26,21 @@ body{
         width: 20px;
     }
 
+    @keyframes animateBarra{
+        0%{ text-align: center;}
+        25%{text-align: left;}
+        75%{text-align: right;}
+        100%{ text-align: center;}
+    }
+    
+    .animate{
+        animation-name: animateBarra;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-delay: 0s;
+        animation-duration: 5s;
+    }
+
 .text-center{
     text-align: center;
 }
@@ -236,21 +251,6 @@ form{
     border: 3px;
     overflow: hidden;
 }
-
-@keyframes animateCarrousel{
-	0%{transition: transform}
-	33%{transition: transform}
-    66%{transition: transform}
-}
-
-.carousel-item {
-    animation-name: animateCarrousel;
-	animation-iteration-count: infinite;
-	animation-timing-function: ease-in-out;
-	animation-delay: 0s;
-	animation-duration: 3s;
-}
-
 
 /* contactenos */
 .contactenos_map--grow{
