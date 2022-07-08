@@ -1,0 +1,25 @@
+
+#botonera{
+    img{
+        height: 10vh;
+    }
+    ul{
+        li{
+            @include texto($fontPrincipal, $fontSm, $negro, $fontSm, $fontBold);
+            list-style: none;
+            padding: 4px;
+            text-align: center;
+            a{
+                color: $negro;
+                text-decoration: none;
+                font-size: $fontXs;
+                transition: underline 0s;
+                &:hover{
+                    text-decoration: underline;
+                    font-size: $fontMd;
+                }
+            }
+        }
+    }
+} 
+

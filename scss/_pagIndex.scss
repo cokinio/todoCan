@@ -1,0 +1,12 @@
+.main_titulo--center{
+    text-align: center;
+}
+
+.bloque{
+    margin:10%; 
+    background-color: $grisa09;
+    p{
+        @include texto($fontPrincipal, $fontSm, $negro, $fontMd, $fontBold);
+        text-align: center;
+    }  
+}

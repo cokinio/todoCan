@@ -1,0 +1,130 @@
+.gridpelu{
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 5%;
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr;  
+    align-content: stretch;
+    grid-template-areas: 
+    "corteybaño"
+    "corteybañopic"
+    "baño"
+    "bañopic"
+    "corte"
+    "cortepic"
+    "uñas"
+    "uñaspic";
+    @media screen and (min-width:768px){
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(4,1fr);  
+        justify-items:center;
+        align-items: center;
+        grid-template-areas: 
+        "corteybaño corteybaño corteybañopic"
+        "bañopic baño baño"
+        "corte corte cortepic"
+        "uñaspic uñas uñas";
+    }
+}
+
+.corteybaño {
+    grid-area: corteybaño;
+    justify-self: stretch;
+    align-self: stretch;
+    background:linear-gradient(to right,$amarillo,$gris); 
+    @media screen and (min-width:768px){
+        margin-top: 10vh;
+    }
+}
+
+.corteybañopic{
+    grid-area: corteybañopic;
+    width:100%;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+    @media screen and (min-width:768px){
+        width:70%;
+        margin-top: 10vh;
+        justify-self: stretch;
+        align-self:stretch;
+    }
+} 
+
+.baño{
+    grid-area: baño;
+    justify-self: stretch;
+    align-self:stretch;
+    background:linear-gradient(to left,$amarillo,$gris);
+    @media screen and (min-width:768px){
+        margin-top: 10vh;
+    } 
+}
+
+.bañopic{
+    grid-area: bañopic;
+    width:100%;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+    @media screen and (min-width:768px){
+        width:70%;
+        align-self: stretch;
+        justify-self: self-end;
+        margin-top: 10vh;
+    } 
+}
+
+.corte{
+    grid-area: corte;
+    justify-self: center;
+    align-self: center;  
+    background:linear-gradient(to right,$amarillo,$gris);
+    @media screen and (min-width:768px){
+        margin-top: 10vh;
+        justify-self: stretch;
+        align-self: stretch;
+    }  
+}
+
+.cortepic{
+    grid-area: cortepic;
+    width:100%;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+    @media screen and (min-width:768px){
+        width:70%;
+        margin-top: 10vh;
+        justify-self: stretch;
+        align-self: stretch;
+    } 
+}
+
+.uñas{
+    grid-area: uñas;
+    border-color: black;
+    justify-self: center;
+    align-self: center;
+    background:linear-gradient(to left,$amarillo,$gris)  ; 
+    @media screen and (min-width:768px){
+        margin-top: 10vh;
+        justify-self: stretch;
+        align-self: stretch;
+    } 
+}
+
+.uñaspic{
+    grid-area: uñaspic;
+    width:100%;
+    height: auto;
+    justify-self: center;
+    align-self: center;
+    @media screen and (min-width:768px){
+        width:70%;
+        align-self: stretch;
+        justify-self: self-end;
+        margin-top: 10vh;
+    } 
+}

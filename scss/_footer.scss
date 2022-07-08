@@ -1,0 +1,14 @@
+footer{
+    grid-area:footer;
+    display: flex;
+    justify-content: space-evenly;
+    a{
+        font-family: $fontPrincipal;
+        font-size: $fontXxs;
+        text-decoration: none;
+        padding: 3px;
+        @media (min-width:480px){
+            font-size: $fontSm;
+        }
+    }
+}

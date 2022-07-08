@@ -86,27 +86,8 @@ body{
 
     #botonera ul li a:hover{
         text-decoration: underline;
-        font-size: 2.1rem;
-    } 
-
-nav ul li{
-    list-style: none;
-    font-family: 'Roboto Condensed', sans-serif;;
-    font-size: 2rem;
-    padding: 4px;
-    text-align: center;
-}
-    nav ul li a{
-        color: rgb( 13, 13, 13);
-        text-decoration: none;
-        font-size: 2.2rem;
-        transition: underline 0s;
-    }
-
-    nav ul li a:hover{
-        text-decoration: underline;
         font-size: 2.3rem;
-    }
+    } 
 
 .padding-principal{
     padding-left: 10%;

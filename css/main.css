@@ -1,0 +1,321 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,700;1,400&display=swap");
+html {
+  font-size: 62.5%; }
+
+h1 {
+  font-size: 4rem; }
+
+h2 {
+  font-size: 3rem; }
+
+h3 {
+  font-size: 2.5rem; }
+
+h1, h2, h3 {
+  font-family: sans-serif;
+  text-align: center; }
+
+.textLigth {
+  font-weight: 300; }
+
+.textRegular {
+  font-weight: 400; }
+
+.textBold {
+  font-weight: 700; }
+
+.text-center {
+  text-align: center; }
+
+.alineacion-left h2 {
+  text-align: left; }
+
+.alineacion-left p {
+  text-align: left; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: sans-serif;
+  box-sizing: border-box; }
+
+body {
+  background-color: rgba(247, 247, 247, 0.9); }
+
+.bg-white {
+  background-color: white; }
+
+.bg-gris {
+  background-color: #f7f7f7; }
+
+.bg-gris-oscuro {
+  background-color: #e6e4e4; }
+
+.bg-gris-a {
+  background-color: rgba(247, 247, 247, 0.8); }
+
+.bg-amarillo {
+  background-color: #f5d600; }
+
+.flexStyle, #productos .galeria {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column; }
+
+.flexCenter {
+  align-items: center; }
+
+section p {
+  color: #0d0d0d;
+  font-family: sans-serif;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  font-weight: 400;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+
+table {
+  display: flex;
+  justify-content: center;
+  border: none; }
+  table tr {
+    color: #0d0d0d;
+    font-family: sans-serif;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 400; }
+
+form {
+  color: #0d0d0d;
+  font-family: sans-serif;
+  font-size: 1.8rem;
+  line-height: 2.5rem;
+  font-weight: 400; }
+
+.breadcrumb {
+  background-color: white;
+  font-size: 2.5rem;
+  font-weight: 300; }
+
+.padding-principal {
+  padding-left: 10%;
+  padding-right: 10%; }
+
+#botonera img {
+  height: 10vh; }
+
+#botonera ul li {
+  color: #0d0d0d;
+  font-family: sans-serif;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-weight: 700;
+  list-style: none;
+  padding: 4px;
+  text-align: center; }
+  #botonera ul li a {
+    color: #0d0d0d;
+    text-decoration: none;
+    font-size: 1.8rem;
+    transition: underline 0s; }
+    #botonera ul li a:hover {
+      text-decoration: underline;
+      font-size: 2.5rem; }
+
+#barraSuperior {
+  font-size: 1.8rem; }
+  #barraSuperior img {
+    width: 20px; }
+
+@keyframes animateBarra {
+  0% {
+    text-align: center; }
+  25% {
+    text-align: left; }
+  75% {
+    text-align: right; }
+  100% {
+    text-align: center; } }
+
+.animate {
+  animation-name: animateBarra;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  animation-delay: 0s;
+  animation-duration: 5s; }
+
+footer {
+  grid-area: footer;
+  display: flex;
+  justify-content: space-evenly; }
+  footer a {
+    font-family: sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    padding: 3px; }
+    @media (min-width: 480px) {
+      footer a {
+        font-size: 2rem; } }
+
+.main_titulo--center {
+  text-align: center; }
+
+.bloque {
+  margin: 10%;
+  background-color: rgba(247, 247, 247, 0.9); }
+  .bloque p {
+    color: #0d0d0d;
+    font-family: sans-serif;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    font-weight: 700;
+    text-align: center; }
+
+.contactenos_map--grow {
+  width: 100%;
+  height: 100vh;
+  padding: 30px  10px; }
+
+.gridpelu {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-bottom: 5%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  align-content: stretch;
+  grid-template-areas: "corteybaño" "corteybañopic" "baño" "bañopic" "corte" "cortepic" "uñas" "uñaspic"; }
+  @media screen and (min-width: 768px) {
+    .gridpelu {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      justify-items: center;
+      align-items: center;
+      grid-template-areas: "corteybaño corteybaño corteybañopic" "bañopic baño baño" "corte corte cortepic" "uñaspic uñas uñas"; } }
+
+.corteybaño {
+  grid-area: corteybaño;
+  justify-self: stretch;
+  align-self: stretch;
+  background: linear-gradient(to right, #f5d600, #f7f7f7); }
+  @media screen and (min-width: 768px) {
+    .corteybaño {
+      margin-top: 10vh; } }
+
+.corteybañopic {
+  grid-area: corteybañopic;
+  width: 100%;
+  height: auto;
+  justify-self: center;
+  align-self: center; }
+  @media screen and (min-width: 768px) {
+    .corteybañopic {
+      width: 70%;
+      margin-top: 10vh;
+      justify-self: stretch;
+      align-self: stretch; } }
+
+.baño {
+  grid-area: baño;
+  justify-self: stretch;
+  align-self: stretch;
+  background: linear-gradient(to left, #f5d600, #f7f7f7); }
+  @media screen and (min-width: 768px) {
+    .baño {
+      margin-top: 10vh; } }
+
+.bañopic {
+  grid-area: bañopic;
+  width: 100%;
+  height: auto;
+  justify-self: center;
+  align-self: center; }
+  @media screen and (min-width: 768px) {
+    .bañopic {
+      width: 70%;
+      align-self: stretch;
+      justify-self: self-end;
+      margin-top: 10vh; } }
+
+.corte {
+  grid-area: corte;
+  justify-self: center;
+  align-self: center;
+  background: linear-gradient(to right, #f5d600, #f7f7f7); }
+  @media screen and (min-width: 768px) {
+    .corte {
+      margin-top: 10vh;
+      justify-self: stretch;
+      align-self: stretch; } }
+
+.cortepic {
+  grid-area: cortepic;
+  width: 100%;
+  height: auto;
+  justify-self: center;
+  align-self: center; }
+  @media screen and (min-width: 768px) {
+    .cortepic {
+      width: 70%;
+      margin-top: 10vh;
+      justify-self: stretch;
+      align-self: stretch; } }
+
+.uñas {
+  grid-area: uñas;
+  border-color: black;
+  justify-self: center;
+  align-self: center;
+  background: linear-gradient(to left, #f5d600, #f7f7f7); }
+  @media screen and (min-width: 768px) {
+    .uñas {
+      margin-top: 10vh;
+      justify-self: stretch;
+      align-self: stretch; } }
+
+.uñaspic {
+  grid-area: uñaspic;
+  width: 100%;
+  height: auto;
+  justify-self: center;
+  align-self: center; }
+  @media screen and (min-width: 768px) {
+    .uñaspic {
+      width: 70%;
+      align-self: stretch;
+      justify-self: self-end;
+      margin-top: 10vh; } }
+
+#productos .galeria {
+  margin: 20px;
+  justify-content: space-between;
+  background-color: white;
+  transition: border 0.5s; }
+  @media (min-width: 480px) {
+    #productos .galeria {
+      flex-direction: row; } }
+  #productos .galeria figure {
+    width: auto;
+    text-align: center;
+    border: #555 solid 1px; }
+    @media (min-width: 480px) {
+      #productos .galeria figure {
+        width: 46%; } }
+    @media (min-width: 768px) {
+      #productos .galeria figure {
+        width: 23%; } }
+    #productos .galeria figure:hover {
+      border: 5px solid #555; }
+    #productos .galeria figure img {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      width: 100%;
+      height: 50vh; }
+    #productos .galeria figure figcaption {
+      font-size: 2.5rem;
+      padding: 10px 0; }
+  #productos .galeria .price {
+    padding-bottom: 10px;
+    font-size: 2rem; }

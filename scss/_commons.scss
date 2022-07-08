@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding:0px;
+    font-family: $fontPrincipal;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: $grisa09;
+}
+
+.bg-white{
+    background-color: $white;
+}
+.bg-gris{
+    background-color: $gris;
+}
+
+.bg-gris-oscuro{
+    background-color: $grisOscuro;
+}
+
+.bg-gris-a{
+    background-color:$grisa08;
+}
+
+.bg-amarillo{
+    background-color: $amarillo;
+}
+
+// .flexStyle{
+//     display: flex;
+//     align-items: flex-start;
+//     justify-content: center;
+//     flex-direction:column;
+//     width: auto;
+// }
+
+.flexStyle{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.flexCenter{ 
+	align-items: center;
+}
+//declaro mixin
+@mixin texto ($family, $size, $color, $height, $weigth) {
+    color:$color;
+    font-family: $family;
+    font-size: $size; 
+    line-height: $height; 
+    font-weight: $weigth;
+}
+
+section p{
+    @include texto($fontPrincipal, $fontSm, $negro, $fontMd, $fontRegular);
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+table{
+    display: flex;
+    justify-content: center;
+    border: none;
+    tr {
+        //llamo al mixing
+        @include texto($fontPrincipal, $fontSm, $negro, $fontMd, $fontRegular);
+    }
+}
+
+form{
+    //llamo al mixing
+    @include texto($fontPrincipal, $fontXs, $negro, $fontMd, $fontRegular);
+}
+
+.breadcrumb{
+    background-color: $white;
+    font-size: $fontMd;
+    font-weight: $fontLigth;
+    }
+
+.padding-principal{
+    padding-left: 10%;
+    padding-right: 10%;
+}   
