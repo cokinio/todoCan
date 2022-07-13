@@ -7,10 +7,10 @@ h1 {
   font-size: 4rem; }
 
 h2 {
-  font-size: 3rem; }
+  font-size: 3.8rem; }
 
 h3 {
-  font-size: 2.5rem; }
+  font-size: 3rem; }
 
 h1, h2, h3 {
   font-family: sans-serif;
@@ -70,11 +70,19 @@ section p {
   color: #0d0d0d;
   font-family: sans-serif;
   font-size: 2rem;
-  line-height: 2.5rem;
+  line-height: 3rem;
   font-weight: 400;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px; }
+
+section figcaption {
+  color: #0d0d0d;
+  font-family: sans-serif;
+  font-size: 2rem;
+  line-height: 3rem;
+  font-weight: 400;
+  text-align: center; }
 
 table {
   display: flex;
@@ -84,14 +92,14 @@ table {
     color: #0d0d0d;
     font-family: sans-serif;
     font-size: 2rem;
-    line-height: 2.5rem;
+    line-height: 3rem;
     font-weight: 400; }
 
 form {
   color: #0d0d0d;
   font-family: sans-serif;
   font-size: 1.8rem;
-  line-height: 2.5rem;
+  line-height: 3rem;
   font-weight: 400; }
 
 .breadcrumb {
@@ -160,7 +168,7 @@ footer {
         font-size: 2rem; } }
 
 .main_titulo--center {
-  text-align: center; }
+  text-align: center !important; }
 
 .bloque {
   margin: 10%;
@@ -169,7 +177,7 @@ footer {
     color: #0d0d0d;
     font-family: sans-serif;
     font-size: 2rem;
-    line-height: 2.5rem;
+    line-height: 3rem;
     font-weight: 700;
     text-align: center; }
 
@@ -209,7 +217,8 @@ footer {
   width: 100%;
   height: auto;
   justify-self: center;
-  align-self: center; }
+  align-self: center;
+  object-fit: cover; }
   @media screen and (min-width: 768px) {
     .corteybañopic {
       width: 70%;
@@ -231,7 +240,8 @@ footer {
   width: 100%;
   height: auto;
   justify-self: center;
-  align-self: center; }
+  align-self: center;
+  object-fit: cover; }
   @media screen and (min-width: 768px) {
     .bañopic {
       width: 70%;
@@ -255,7 +265,8 @@ footer {
   width: 100%;
   height: auto;
   justify-self: center;
-  align-self: center; }
+  align-self: center;
+  object-fit: cover; }
   @media screen and (min-width: 768px) {
     .cortepic {
       width: 70%;
@@ -280,7 +291,8 @@ footer {
   width: 100%;
   height: auto;
   justify-self: center;
-  align-self: center; }
+  align-self: center;
+  object-fit: cover; }
   @media screen and (min-width: 768px) {
     .uñaspic {
       width: 70%;
@@ -312,7 +324,8 @@ footer {
       border-top-left-radius: 5px;
       border-top-right-radius: 5px;
       width: 100%;
-      height: 50vh; }
+      height: 50vh;
+      object-fit: cover; }
     #productos .galeria figure figcaption {
       font-size: 2.5rem;
       padding: 10px 0; }

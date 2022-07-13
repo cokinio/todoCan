@@ -44,6 +44,7 @@
     height: auto;
     justify-self: center;
     align-self: center;
+    object-fit: cover;
     @media screen and (min-width:768px){
         width:70%;
         margin-top: 10vh;
@@ -68,6 +69,7 @@
     height: auto;
     justify-self: center;
     align-self: center;
+    object-fit: cover;
     @media screen and (min-width:768px){
         width:70%;
         align-self: stretch;
@@ -94,6 +96,7 @@
     height: auto;
     justify-self: center;
     align-self: center;
+    object-fit: cover;
     @media screen and (min-width:768px){
         width:70%;
         margin-top: 10vh;
@@ -121,6 +124,7 @@
     height: auto;
     justify-self: center;
     align-self: center;
+    object-fit: cover;
     @media screen and (min-width:768px){
         width:70%;
         align-self: stretch;

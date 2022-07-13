@@ -28,14 +28,6 @@ body{
     background-color: $amarillo;
 }
 
-// .flexStyle{
-//     display: flex;
-//     align-items: flex-start;
-//     justify-content: center;
-//     flex-direction:column;
-//     width: auto;
-// }
-
 .flexStyle{
     display: flex;
     flex-wrap: wrap;
@@ -61,6 +53,11 @@ section p{
     padding-bottom: 10px;
 }
 
+section figcaption{
+    @include texto($fontPrincipal, $fontSm, $negro, $fontMd, $fontRegular);
+    text-align: center;
+}
+
 table{
     display: flex;
     justify-content: center;
@@ -78,7 +75,7 @@ form{
 
 .breadcrumb{
     background-color: $white;
-    font-size: $fontMd;
+    font-size: $fontSmBig;
     font-weight: $fontLigth;
     }
 
