@@ -181,6 +181,10 @@ footer {
     font-weight: 700;
     text-align: center; }
 
+.perroWidth {
+  width: 90%;
+  height: auto; }
+
 .contactenos_map--grow {
   width: 100%;
   height: 100vh;

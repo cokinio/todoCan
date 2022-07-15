@@ -1,7 +1,7 @@
 {
   "name": "todocan",
   "version": "1.0.0",
-  "description": "",
+  "description": "El proyecto Todo Can consiste en una veterinaria que brinda servicios varios y vende productos caninos",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/cokinio/todoCan.git"
   },
-  "author": "",
+  "author": "Leandro Schlain",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/cokinio/todoCan/issues"
