@@ -19,7 +19,7 @@
             width: 23%;
         }
         &:hover{
-            border: 5px solid $grisClaro;
+            border: 5px solid $grisClaro; 
         }
         img{
 			border-top-left-radius: 5px;
@@ -31,6 +31,10 @@
         figcaption{
 			font-size: $fontSmBig;
 			padding: 10px 0;
+                a{
+                    text-decoration: none;
+                    color: $negro;
+                }
 		}
 	}
     .price{
